@@ -112,7 +112,7 @@ def py3_image(name, base = None, deps = [], layers = [], **kwargs):
     app_layer(
         name = name,
         base = base,
-        entrypoint = ["/usr/bin/python"],
+        entrypoint = ["/usr/local/bin/python3"],
         binary = binary_name,
         visibility = visibility,
         tags = tags,
